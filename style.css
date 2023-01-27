@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    height: 100%;
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+    gap: 4px;
+}
+.header{
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color: darkgrey;
+}
+.sidebar{
+    grid-row: 1 / 4;
+    background-color: darkgrey;
+}
+.project-container{
+    grid-row: 2 / 4;
+    background-color: darkgrey;
+}
+.announcements{
+    background-color: darkgrey;
+}
+.trending{
+    background-color: darkgrey;
+}
