@@ -1,31 +1,53 @@
-body{
-    background-color: black;
+:root{
+    --panel: rgb(60, 83, 63);
+}
+html{
     height: 100%;
+}
+body{
+    height: 100%;
+    background-color: black;
+    margin: 0;
 }
 .container{
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: 1fr 4fr 3fr;
     gap: 4px;
+    text-align: center;
 }
 .header{
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-color: darkgrey;
+    background-color: var(--panel);
+    align-items: center;
 }
 .sidebar{
+    display: grid;
     grid-row: 1 / 4;
-    background-color: darkgrey;
+    background-color: var(--panel);
+    gap: 15px;
+    padding: 15px;
+}
+.side-content{
+    display: grid;
+    background-color:;
+    align-items: center;
+    background-color: rgb(34, 58, 39);
 }
 .project-container{
     grid-row: 2 / 4;
-    background-color: darkgrey;
+    background-color: var(--panel);
 }
 .announcements{
-    background-color: darkgrey;
+    background-color: var(--panel);
 }
 .trending{
-    background-color: darkgrey;
+    background-color: var(--panel);
+}
+.search-bar{
+    background-color: white;
 }
