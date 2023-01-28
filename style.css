@@ -11,7 +11,7 @@ body{
 .container{
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 4fr 3fr;
     gap: 4px;
     text-align: center;
@@ -30,7 +30,9 @@ body{
     grid-row: 1 / 4;
     background-color: var(--panel);
     gap: 15px;
-    padding: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .sidebar-content-container{
     display: grid;
@@ -42,7 +44,7 @@ body{
     justify-content: start;
     align-items: center;
     background-color: rgb(34, 42, 58);
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     padding-left: 30px;
 }
 .project-container{
