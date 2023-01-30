@@ -18,7 +18,7 @@ body{
 }
 .header{
     display: grid;
-    grid-template-columns: 1fr 4fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 40% 3fr 10% 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
@@ -206,4 +206,20 @@ input{
 }
 p, h4{
     margin: 0;
+}
+@media (max-width: 1000px) {
+    .header {
+      display: grid;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .profile .icon, .bell{
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+    .header-button-container{
+        grid-column: 2 / 3;
+    }
 }
