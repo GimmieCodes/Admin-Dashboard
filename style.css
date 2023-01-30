@@ -19,6 +19,7 @@ body{
 .header{
     display: grid;
     grid-template-columns: 1fr 4fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-color: rgb(34, 42, 58);
@@ -168,4 +169,36 @@ input{
     border-radius: 20px;
     padding-left: 10px;
     box-shadow: 0px 3px 5px black;
+}
+.header-greet{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1 / 2;
+}
+.header-greet-icon{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.header-greet-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 120px;
+    padding: 5px;
+}
+.header-button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 3 / 5;
+    gap: 15px;
+}
+.header-button{
+    background-color:rgb(24, 29, 41) ;
+    border-radius: 30px;
+    padding: 15px;
+}
+p, h4{
+    margin: 0;
 }
