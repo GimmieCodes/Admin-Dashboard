@@ -164,6 +164,8 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.link{
-   
+input{
+    border-radius: 20px;
+    padding-left: 10px;
+    box-shadow: 0px 3px 5px black;
 }
